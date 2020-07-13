@@ -1,5 +1,5 @@
 <p align="center">
-<img src="images/pr-scraper-logo.png" width="300px">
+<img src="images/pr-scraper-logo.png" width="250px">
 </p>
 
 #### 1. はじめに  
