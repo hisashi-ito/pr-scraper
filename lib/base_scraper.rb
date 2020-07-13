@@ -9,6 +9,7 @@
 # 更新履歴:
 #           2020.07.13 新規作成
 #
+require "bundler/setup"
 require 'logger'
 require 'moji'
 require 'cgi'
@@ -21,14 +22,19 @@ class BaseScraper
   # テンプディレクトリ
   TMP_DIR = "/tmp"
 
+  #= 初期化
   def initialize(logger, params)
     @logger = logger
     @params = params
     @logger.info(@params)
     # sleep 設定
-    @fetch_interval = @params["fetch_interval"].to_i
+    @fetch_interval = 0
+    if @params.has_key?("fetch_interval")
+      @fetch_interval = @params["fetch_interval"].to_i
+    end
   end # initialize
 
+  #= トリミング
   def trim(text)
     text = text.gsub(/\t+/," ")
     text = text.gsub(/\n+/,"")
@@ -36,10 +42,12 @@ class BaseScraper
     return text
   end
 
+  #= 文字列の正規化
   def normalize(text)
     Moji.normalize_zen_han(text)
   end
 
+  #= リクエスト
   def request(url)
     sleep(@fetch_interval)
     opt = {}
@@ -55,7 +63,8 @@ class BaseScraper
     end
     return html
   end
-  
+
+  #= parse
   def parse(html)
     doc = nil
     begin
@@ -65,5 +74,10 @@ class BaseScraper
       @logger.error("パースに失敗しました: #{e.backtrace}")
     end
     return doc
+  end
+
+  #= スクレイピング
+  def scrape(doc)
+    raise "継承先のクラスで実装してください"
   end
 end

@@ -1,0 +1,24 @@
+GIT
+  remote: https://github.com/mono0x/extractcontent
+  revision: 6dc303ab5ad90ada73a8b63c29dc0b99591afabd
+  specs:
+    extractcontent (0.0.1)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    mini_portile2 (2.4.0)
+    moji (1.6)
+    nokogiri (1.10.10)
+      mini_portile2 (~> 2.4.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  extractcontent!
+  moji
+  nokogiri
+
+BUNDLED WITH
+   1.17.1
