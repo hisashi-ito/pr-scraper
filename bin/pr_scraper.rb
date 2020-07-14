@@ -21,7 +21,7 @@
 #          2020.07.13 新規作成
 #
 $: << File.join(File.dirname(__FILE__), '../lib')
-require 'softbank_analyzer'
+require 'softbank_scraper'
 require 'logger'
 require 'optparse'
 require 'time'
@@ -31,21 +31,24 @@ class PrScraper
     @logger = logger
     @site = site
     @output = output
-    @from = Time::parse(from)
-    @to = Time::parse(to)
+    @from = Time::parse(from).to_i
+    @to = Time::parse(to).to_i
     @scraper = nil
     if @site == "softbank"
-      # ソフトバンクのPR
-      @scraper = SoftBankAnalyzer.new(logger)
+      # ソフトバンクグループのPR
+      @scraper = SoftBankScraper.new(@logger, {}, @from, @to)
     end
-    
-    
-    
   end # initialize
-
   
-
-  
+  def perform()
+    ret = @scraper.scrape()
+    # 出力
+    o = open(@output, "w")
+    ret.each do |ary|
+      o.puts(ary.join("\t"))
+    end
+    o.close()
+  end
 end # pr scraper
 
 
@@ -56,10 +59,11 @@ def main(argv)
   if param["o"].nil? || param["s"].nil? || param["f"].nil? || param["t"].nil?
     $stderr.puts "usage: pr_scraper -s <site> -o <output> -f <from YYYYMMDD> -t <to YYYYMMDD>"
   end
-
-  
-  
+  logger.info("*** start pr_scraper ***")
+  PrScraper.new(logger, param["s"], param["o"], param["f"], param["t"]).perform()
+  logger.info("*** stop pr_scraper ***")
 end
+
 
 if __FILE__ == $0
   main(ARGV)

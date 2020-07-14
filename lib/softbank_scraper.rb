@@ -18,7 +18,7 @@ require 'time'
 require 'cgi'
 require 'nokogiri'
 require 'extractcontent'
-URL = "https://www.softbank.jp/corp/news/press/sbkk"
+SLEEP = 0.25
 
 class SoftBankScraper < BaseScraper
   #= 初期化
@@ -30,10 +30,12 @@ class SoftBankScraper < BaseScraper
   end # initialize
 
   #= スクレイプ
-  def scrape()
+  #  プレリリースの親ページから指定期内のリンク情報を取得
+  def _scrape(url)
+    ret = []
     times = []
     title_link = []
-    html = request(URL) # URLは固定
+    html = request(url) # URLは固定
     doc = parse(html)
     doc.xpath("//time[@class='corp-news-layout-info-01_date']").each do |x|
       utime = Time.strptime(x.text, "%Y年%m月%d日").to_i
@@ -41,21 +43,56 @@ class SoftBankScraper < BaseScraper
     end
     doc.xpath("//a[@class='corp-news-layout-info-01_link']").each do |x|
       title = x.text
-      # 絶対URLへ変換
-      link = URL + x.attribute("href").value
+      # URLへ変換
+      link = x.attribute("href").value
+      if link =~ (/^\//)
+        link = "https://www.softbank.jp" + link
+      end
       title_link.push([title, link])
     end
 
     # 時刻情報,タイトル,リンク先の情報を取得
-    # 工事中...    
-    
-  end
+    if times.size() != title_link.size()
+      @logger.error("抽出した項目が不一致です。")
+      exit
+    end
 
+    # 時間の昇順ソート
+    times.sort!
+    title_link.sort!
+    
+    times.each_with_index{|time, idx|
+      sleep SLEEP
+      # 時間が指定の範囲にあるかどう
+      if @from <= time and time <= @to
+        time_str = Time.at(time).strftime("%Y年%-m月%-d日")
+        title, link = title_link[idx]
+        ary = link_body(link)
+        if ary == nil
+          ret.push([time_str, title ,link, ""])
+        else
+          body = trim(ary[1])
+          ret.push([time_str, title ,link, body])
+        end
+      end
+    }
+    return ret    
+  end
+  
   #= リンク先のコンテンツ情報
   def link_body(url)
-    html = request(url)
-    body, title = ExtractContent.analyse(html)
-    return [title, body]
+    begin
+      html = request(url)
+      body, title = ExtractContent.analyse(html)
+      return [title, body]
+    rescue
+      @logger.warn("本文抽出に失敗しました: #{url}")
+      return nil
+    end
+  end
+
+  def scrape()
+    return _scrape("https://www.softbank.jp/corp/news/press/all")
   end
 end # softbank scraper
 
@@ -64,8 +101,8 @@ if __FILE__ == $0
   logger = Logger.new(STDERR)
   logger.level = Logger::INFO
   params = {}
-  from = Time::parse("2020/01/01").to_i
+  from = Time::parse("2020/04/01").to_i
   to = Time::parse("2020/6/30").to_i
   softbank = SoftBankScraper.new(logger, params, from, to)
-  softbank.scrape()
+  p softbank.scrape()
 end
