@@ -8,6 +8,7 @@
 #
 # 更新履歴:
 #           2020.07.13 新規作成
+#           2020.07.24 extractcontentを基底クラスへ移動
 #
 require "bundler/setup"
 require 'logger'
@@ -15,6 +16,7 @@ require 'moji'
 require 'cgi'
 require 'open-uri'
 require 'nokogiri'
+require 'extractcontent'
 
 class BaseScraper
   # User Agent: Chrome/Mac を偽装
@@ -79,5 +81,17 @@ class BaseScraper
   #= スクレイピング
   def scrape(doc)
     raise "継承先のクラスで実装してください"
+  end
+
+  #= リンク先のコンテンツ情報
+  def link_body(url)
+    begin
+      html = request(url)
+      body, title = ExtractContent.analyse(html)
+      return [title, body]
+    rescue
+      @logger.warn("本文抽出に失敗しました: #{url}")
+      return nil
+    end
   end
 end

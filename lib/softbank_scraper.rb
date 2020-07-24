@@ -17,7 +17,6 @@ require 'logger'
 require 'time'
 require 'cgi'
 require 'nokogiri'
-require 'extractcontent'
 SLEEP = 0.25
 
 class SoftBankScraper < BaseScraper
@@ -79,18 +78,6 @@ class SoftBankScraper < BaseScraper
     return ret    
   end
   
-  #= リンク先のコンテンツ情報
-  def link_body(url)
-    begin
-      html = request(url)
-      body, title = ExtractContent.analyse(html)
-      return [title, body]
-    rescue
-      @logger.warn("本文抽出に失敗しました: #{url}")
-      return nil
-    end
-  end
-
   def scrape()
     return _scrape("https://www.softbank.jp/corp/news/press/all")
   end

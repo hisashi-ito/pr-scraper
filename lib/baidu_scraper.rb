@@ -17,7 +17,6 @@ require 'logger'
 require 'time'
 require 'cgi'
 require 'nokogiri'
-require 'extractcontent'
 SLEEP = 0.25
 
 class BaiduScraper < BaseScraper
@@ -91,18 +90,6 @@ class BaiduScraper < BaseScraper
     }
     return ret
   end
-  
-  #= リンク先のコンテンツ情報
-  def link_body(url)
-    begin
-      html = request(url)
-      body, title = ExtractContent.analyse(html)
-      return [title, body]
-    rescue
-      @logger.warn("本文抽出に失敗しました: #{url}")
-      return nil
-    end
-  end # link body
 end
 
 

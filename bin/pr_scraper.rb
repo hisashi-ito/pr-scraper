@@ -19,11 +19,12 @@
 #
 # 更新履歴:
 #          2020.07.13 新規作成
-#          2020.07.24 ScraperにBaiduを追加
+#          2020.07.24 ScraperにBaidu,Rakutenを追加
 #
 $: << File.join(File.dirname(__FILE__), '../lib')
 require 'softbank_scraper'
 require 'baidu_scraper'
+require 'rakuten_scraper'
 require 'logger'
 require 'optparse'
 require 'time'
@@ -37,10 +38,11 @@ class PrScraper
     @to = Time::parse(to).to_i
     @scraper = nil
     if @site == "softbank"
-      # ソフトバンクグループのPR
       @scraper = SoftBankScraper.new(@logger, {}, @from, @to)
     elsif @site == "baidu"
       @scraper = BaiduScraper.new(@logger, {}, @from, @to)
+    elsif @site == "rakuten"
+      @scraper = RakutenScraper.new(@logger, {}, @from, @to)
     end
   end # initialize
   
