@@ -43,3 +43,12 @@ $ ruby ./pr_scraper.rb -s softbank -o softbank_pr.tsv -f 20200401 -t 20200630
 * 楽天  
   https://corp.rakuten.co.jp/news/press/
 
+* NTT docomo  
+  https://www.nttdocomo.co.jp/info/news_release/year.html?year=2020  
+  
+* メルカリ  
+   https://about.mercari.com/press/news/  
+   
+* DMM  
+  https://dmm-corp.com/press/  
+  
