@@ -87,7 +87,7 @@ class BaseScraper
   def link_body(url)
     begin
       html = request(url)
-      body, title = ExtractContent.analyse(html)
+      body, title = ExtractContent.analyse(html.force_encoding('utf-8'))
       return [title, body]
     rescue
       @logger.warn("本文抽出に失敗しました: #{url}")

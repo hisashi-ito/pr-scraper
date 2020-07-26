@@ -3,8 +3,8 @@
 #
 # 【baidu_scraper】
 #
-#  概要: 百度JAPAN プレスリリース
-#        https://www.baidu.jp/info/
+#  概要: メルカリ(mercari) プレスリリース
+#        https://about.mercari.com/press/news/
 #        のニュースリリース情報を抽出する
 #
 #  更新履歴:
@@ -19,12 +19,12 @@ require 'cgi'
 require 'nokogiri'
 SLEEP = 0.25
 
-class BaiduScraper < BaseScraper
+class MercariScraper < BaseScraper
   # トップページ
-  URL_TOP = "https://www.baidu.jp/info/"
+  URL_TOP = "https://about.mercari.com/press/news/"
   # トップ以降のページ
-  URL = "https://www.baidu.jp/info/page/"
-
+  URL = "https://about.mercari.com/press/news/?page="
+  
   #= 初期化
   def initialize(logger, params, from, to)
     super(logger, params)
@@ -32,7 +32,7 @@ class BaiduScraper < BaseScraper
     @from = from
     @to = to
   end # initialize
-  
+
   #= スクレイプ
   #  プレリリースの親ページから指定期内のリンク情報を取得する
   #  期間内のデータを取得するまでpagingを実施する。
@@ -40,24 +40,16 @@ class BaiduScraper < BaseScraper
     link_info = []
     html = request(url)
     doc = parse(html)
-    doc.xpath("//ul[@class='news_lists']/li/a").each do |x|
-      utime = nil
-      time_str = nil
-      title = nil
+    doc.xpath("//li[@class='list-block__item']/a").each do |x|
       link = x.attribute("href").value
-      x.xpath("p[@class='date']").each do |y|
-        date = y.text
-        date = date.gsub('報道発表', '')
-        date = date.gsub('百度本社', '')
-        utime = Time.strptime(date, "%Y.%m.%d").to_i
-        time_str = Time.at(utime).strftime("%Y年%-m月%-d日")
-      end
-      x.xpath("p[@class='txt']").each do |y|
-        title = y.text
-      end
+      link = 'https://about.mercari.com/' + link if link !~ (/^http/)
+      date = x.xpath("div/div/div[@class='date']")[0].text
+      utime = Time.strptime(date, "%Y.%m.%d").to_i
+      time_str = Time.at(utime).strftime("%Y年%-m月%-d日")
+      title = x.xpath("div/div[@class='title regular']").text
       link_info.push([utime, link, time_str, title])
-    end
-
+    end # doc
+    
     # リンク先のコンテンツを保存
     ret = []
     link_info.sort!
@@ -77,7 +69,7 @@ class BaiduScraper < BaseScraper
     end
     return ret
   end
-
+  
   def scrape()
     # 最初にトップのURLから収集
     ret = _scrape(URL_TOP)
@@ -99,6 +91,6 @@ if __FILE__ == $0
   params = {}
   from = Time::parse("2020/04/01").to_i
   to = Time::parse("2020/6/30").to_i
-  baidu = BaiduScraper.new(logger, params, from, to)
-  p baidu.scrape()
+  docomo = MercariScraper.new(logger, params, from, to)
+  p docomo.scrape()
 end
