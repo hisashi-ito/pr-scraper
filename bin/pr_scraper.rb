@@ -19,8 +19,9 @@
 #
 # 更新履歴:
 #          2020.07.13 新規作成
-#          2020.07.24 ScraperにBaidu,Rakutenを追加
-#          2020.07.26 ScraperにDocomo,メルカリ,DMMを追加
+#          2020.07.24 Scraper にBaidu,Rakutenを追加
+#          2020.07.26 Scraper にDocomo,メルカリ,DMMを追加
+#          2020.07.27 Scraper にLINE,CyberAgentを追加
 #
 $: << File.join(File.dirname(__FILE__), '../lib')
 require 'logger'
@@ -32,6 +33,7 @@ require 'rakuten_scraper'
 require 'docomo_scraper'
 require 'mercari_scraper'
 require 'dmm_scraper'
+require 'line_scraper'
 
 class PrScraper
   def initialize(logger, site, output, from, to)
@@ -40,8 +42,7 @@ class PrScraper
     @output = output
     @from = Time::parse(from).to_i
     @to = Time::parse(to).to_i
-    
-    # Scraperの設定
+    # Scraper の設定
     @scraper = nil
     if @site == "softbank"
       @scraper = SoftBankScraper.new(@logger, {}, @from, @to)
@@ -55,6 +56,10 @@ class PrScraper
       @scraper = MercariScraper.new(@logger, {}, @from, @to)
     elsif @site == "dmm"
       @scraper = DmmScraper.new(@logger, {}, @from, @to)
+    elsif @site == "line"
+      @scraper = LineScraper.new(@logger, {}, @from, @to)
+    elsif @site == "cyberagent"
+      @scraper = CyberagentScraper.new(@logger, {}, @from, @to)
     end
   end # initialize
   
