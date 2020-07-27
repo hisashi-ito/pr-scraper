@@ -51,4 +51,10 @@ $ ruby ./pr_scraper.rb -s softbank -o softbank_pr.tsv -f 20200401 -t 20200630
    
 * DMM  
   https://dmm-corp.com/press/  
+
+* LINE  
+  https://linecorp.com/ja/pr/news/  
+  
+* CyberAgent  
+  https://www.cyberagent.co.jp/news/press/
   
