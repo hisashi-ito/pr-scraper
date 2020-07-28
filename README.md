@@ -58,3 +58,5 @@ $ ruby ./pr_scraper.rb -s softbank -o softbank_pr.tsv -f 20200401 -t 20200630
 * CyberAgent  
   https://www.cyberagent.co.jp/news/press/
   
+* Apple  
+  https://www.apple.com/jp/newsroom/archive/
