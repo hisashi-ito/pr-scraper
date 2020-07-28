@@ -43,10 +43,12 @@ class YahooScraper < BaseScraper
   def scrape()
     begin
       driver = Selenium::WebDriver.for :chrome, options: @options
-      driver.get URL
+      driver.get(URL)
+      driver.find_element(:xpath, "/html/body/div[3]/main/div[2]/div[2]/div/p/a").click
+      
     ensure
       driver.close unless driver.nil?
-      driver.quit unless driver.nil?e
+      driver.quit unless driver.nil?
     end
   end
 end # yahoo scraper
