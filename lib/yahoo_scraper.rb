@@ -9,6 +9,9 @@
 #
 #        ボタン押下でPRが増えるので、selenium を利用する必要があり
 #
+#        selenium の操作法
+#        - https://qiita.com/mochio/items/dc9935ee607895420186
+#
 #  更新履歴:
 #           2020.07.28 新規作成
 #
