@@ -7,10 +7,15 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    childprocess (3.0.0)
     mini_portile2 (2.4.0)
     moji (1.6)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
+    rubyzip (2.3.0)
+    selenium-webdriver (3.142.7)
+      childprocess (>= 0.5, < 4.0)
+      rubyzip (>= 1.2.2)
 
 PLATFORMS
   ruby
@@ -19,6 +24,7 @@ DEPENDENCIES
   extractcontent!
   moji
   nokogiri
+  selenium-webdriver
 
 BUNDLED WITH
    1.17.1
