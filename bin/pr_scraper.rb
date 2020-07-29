@@ -23,6 +23,7 @@
 #          2020.07.26 Scraper にDocomo,メルカリ,DMMを追加
 #          2020.07.27 Scraper にLINE,CyberAgentを追加
 #          2020.07.28 Scraper にAppleを追加
+#          2020.07.29 Scraper にYahoo を追加
 #
 $: << File.join(File.dirname(__FILE__), '../lib')
 require 'logger'
@@ -36,6 +37,7 @@ require 'mercari_scraper'
 require 'dmm_scraper'
 require 'line_scraper'
 require 'apple_scraper'
+require 'yahoo_scraper'
 
 class PrScraper
   def initialize(logger, site, output, from, to)
@@ -64,6 +66,8 @@ class PrScraper
       @scraper = CyberagentScraper.new(@logger, {}, @from, @to)
     elsif @site == "apple"
       @scraper = AppleScraper.new(@logger, {}, @from, @to)
+    elsif @site == "Yahoo"
+      @scraper = YahooScraper.new(@logger, {}, @from, @to)
     end
   end # initialize
   

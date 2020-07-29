@@ -26,8 +26,11 @@ require 'selenium-webdriver'
 SLEEP = 0.25
 
 class YahooScraper < BaseScraper
+  # URL
   URL = "https://about.yahoo.co.jp/pr/"
-
+  # 最大クリック回数(ボタンがなくなるまでクリックする)
+  MAX_CLICK_NUM = 30
+  
   #= 初期化
   def initialize(logger, params, from, to)
     super(logger, params)
@@ -44,15 +47,49 @@ class YahooScraper < BaseScraper
   #  プレリリースの親ページから指定期内のリンク情報を取得する
   #  期間内のデータを取得するまでpagingを実施する。
   def scrape()
+    link_info = []
     begin
       driver = Selenium::WebDriver.for :chrome, options: @options
       driver.get(URL)
-      driver.find_element(:xpath, "/html/body/div[3]/main/div[2]/div[2]/div/p/a").click
-      
+      begin
+        MAX_CLICK_NUM.times{
+          driver.find_element(:xpath, "/html/body/div[3]/main/div[2]/div[2]/div/p/a").click
+        }
+      rescue
+        # xpath から情報を抽出
+        driver.find_elements(:xpath, "//div[@class='col1-3 panel-vertical']/a").each do |x|
+          elems = x.text.split("\n")
+          title = elems[1]
+          date = elems[2]
+          utime = Time.strptime(date, "%Y.%m.%d").to_i
+          time_str = Time.at(utime).strftime("%Y年%-m月%-d日")
+          link = x.attribute('href')
+          link_info.push([utime, link, time_str, title])
+        end
+      end
     ensure
       driver.close unless driver.nil?
       driver.quit unless driver.nil?
     end
+    
+    # リンク先のコンテンツを保存
+    ret = []
+    link_info.sort!
+    link_info.each do |elems|
+      utime, link, time_str, title = elems
+      sleep SLEEP
+      # 時間が指定の範囲にあるかどう
+      if @from <= utime and utime <= @to
+        ary = link_body(link)
+        if ary == nil
+          ret.push([time_str, title ,link, ""])
+        else
+          body = trim(ary[1])
+          ret.push([time_str, title ,link, body])
+        end
+      end
+    end
+    return ret
   end
 end # yahoo scraper
 
@@ -64,5 +101,5 @@ if __FILE__ == $0
   from = Time::parse("2020/04/01").to_i
   to = Time::parse("2020/6/30").to_i
   yahoo = YahooScraper.new(logger, params, from, to)
-  yahoo.scrape()
+  p yahoo.scrape()
 end
