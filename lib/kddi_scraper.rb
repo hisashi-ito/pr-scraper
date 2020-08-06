@@ -34,8 +34,8 @@ class KddiScraper < BaseScraper
     link_info = []
     html = request(url)
     doc = parse(html)
-    doc.xpath("//*[class='ind']").each do |x|
-      p x
+    doc.xpath("//div[@class='pbNested pbNestedWrapper']").each do |x|
+      p trim(x.text)
     end
   end # _scrape
 
