@@ -66,3 +66,6 @@ $ ruby ./pr_scraper.rb -s softbank -o softbank_pr.tsv -f 20200401 -t 20200630
 
 * Alibana  
   https://www.alibaba.co.jp/news/
+
+* Microsoft  
+  https://news.microsoft.com/ja-jp/category/press-releases/

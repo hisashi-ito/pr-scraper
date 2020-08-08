@@ -24,7 +24,7 @@
 #          2020.07.27 Scraper にLINE,CyberAgentを追加
 #          2020.07.28 Scraper にAppleを追加
 #          2020.07.29 Scraper にYahoo を追加
-#          2020.08.08 Scraper にAlibaba を追加
+#          2020.08.08 Scraper にAlibaba,Microsoft を追加
 #
 $: << File.join(File.dirname(__FILE__), '../lib')
 require 'logger'
@@ -40,6 +40,7 @@ require 'line_scraper'
 require 'apple_scraper'
 require 'yahoo_scraper'
 require 'alibaba_scraper'
+require 'microsoft_scraper'
 
 class PrScraper
   def initialize(logger, site, output, from, to)
@@ -72,6 +73,8 @@ class PrScraper
       @scraper = YahooScraper.new(@logger, {}, @from, @to)
     elsif @site == "alibaba"
       @scraper = AlibanaScraper.new(@logger, {}, @from, @to)
+    elsif @site == "microsoft"
+      @scraper = MicrosoftScraper.new(@logger, {}, @from, @to)
     end
   end # initialize
   
