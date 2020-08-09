@@ -69,3 +69,18 @@ $ ruby ./pr_scraper.rb -s softbank -o softbank_pr.tsv -f 20200401 -t 20200630
 
 * Microsoft  
   https://news.microsoft.com/ja-jp/category/press-releases/
+
+* PRTIMES  
+  PRTIMESを利用してkeyword を検索で以下の企業を検索する。
+  * Amazon  
+    https://prtimes.jp/topics/keywords/Aamazon  
+
+  * Google  
+    https://prtimes.jp/topics/keywords/Google  
+
+  * KDDI  
+    https://prtimes.jp/topics/keywords/KDDI
+
+  * Facebook  
+    https://prtimes.jp/topics/keywords/Facebook
+
