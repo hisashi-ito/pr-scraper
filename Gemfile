@@ -9,3 +9,5 @@ gem "moji"
 gem "nokogiri"
 gem "extractcontent", github: "mono0x/extractcontent"
 gem "selenium-webdriver"
+gem 'sinatra'
+gem 'sinatra-contrib'

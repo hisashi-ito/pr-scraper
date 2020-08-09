@@ -16,3 +16,8 @@ $ sudo apt-get install -y sqlite3
 | LINK | TEXT |リンク|
 | BODY | TEXT |ニュースの本文|
 
+### テンプレート・インストール  
+https://github.com/ColorlibHQ/gentelella　　
+```bash
+$ npm install gentelella --save
+```
