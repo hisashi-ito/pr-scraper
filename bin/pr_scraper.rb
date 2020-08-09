@@ -25,6 +25,7 @@
 #          2020.07.28 Scraper にAppleを追加
 #          2020.07.29 Scraper にYahoo を追加
 #          2020.08.08 Scraper にAlibaba,Microsoft を追加
+#          2020.08.10 Scraper にAmazon,Google,KDDI,PRTIMES,Facebook,Microsoftを追加
 #
 $: << File.join(File.dirname(__FILE__), '../lib')
 require 'logger'
@@ -49,6 +50,7 @@ class PrScraper
     @output = output
     @from = Time::parse(from).to_i
     @to = Time::parse(to).to_i
+
     # Scraper の設定
     @scraper = nil
     if @site == "softbank"
@@ -75,7 +77,18 @@ class PrScraper
       @scraper = AlibanaScraper.new(@logger, {}, @from, @to)
     elsif @site == "microsoft"
       @scraper = MicrosoftScraper.new(@logger, {}, @from, @to)
+    elsif @site == "amazon"
+      @scraper = AmazonScraper.new(@logger, {}, @from, @to)
+    elsif @site == "google"
+      @scraper = GoogleScraper.new(@logger, {}, @from, @to)
+    elsif @site == "kddi"
+      @scraper = KddiScraper.new(@logger, {}, @from, @to)
+    elsif @site == "facebook"
+      @scraper = FacebookScraper.new(@logger, {}, @from, @to)
+    elsif @site	== "microsoft"
+      @scraper = MicrosoftScraper.new(@logger, {}, @from, @to)
     end
+    
   end # initialize
   
   def perform()

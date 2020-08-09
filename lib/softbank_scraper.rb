@@ -27,7 +27,7 @@ class SoftBankScraper < BaseScraper
     @from = from
     @to = to
   end # initialize
-
+  
   #= スクレイプ
   #  プレリリースの親ページから指定期内のリンク情報を取得
   def _scrape(url)

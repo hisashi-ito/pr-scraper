@@ -24,7 +24,7 @@ class MicrosoftScraper < BaseScraper
   # トップページ
   URL_TOP = "https://news.microsoft.com/ja-jp/category/press-releases/"
   # トップ以降のページ
-	URL = "https://news.microsoft.com/ja-jp/category/press-releases/page/"
+  URL = "https://news.microsoft.com/ja-jp/category/press-releases/page/"
   
   #= 初期化
   def initialize(logger, params, from, to)
@@ -32,32 +32,32 @@ class MicrosoftScraper < BaseScraper
     # 解析対象時間(UNIX TIME)で指定するようにする
     @from = from
     @to = to
-	end # initialize
-
-	#= スクレイプ
+  end # initialize
+  
+  #= スクレイプ
   #  プレリリースの親ページから指定期内のリンク情報を取得する
   #  期間内のデータを取得するまでpagingを実施する。
-	def _scrape(url)
-		ret = []
-  	times = []
-  	link_info = []
-  	html = request(url) # URLは固定
-		doc = parse(html)
-		doc.xpath("//article/div[@class='m-preview-content']").each do |x|
-			link = x.xpath("a").attribute("href").value
-			title = trim(x.xpath("a").text)
-			# URLのpathから日付を同定する(リアルな日付はリンク先しかないがめんどい)
-			# https://news.microsoft.com/ja-jp/2020/07/01/200701-skillingprogram
-			if link =~ (/^https:\/\/news\.microsoft\.com\/ja\-jp\/(\d+)\/(\d+)\/(\d+)\//)
-				year = $1
-				month = $2
-				day = $3
-				utime = Time.local(year, month, day).to_i
-				time_str = Time.at(utime).strftime("%Y年%-m月%-d日")
-				link_info.push([utime, link, time_str, title])
-			end
-		end
-
+  def _scrape(url)
+    ret = []
+    times = []
+    link_info = []
+    html = request(url) # URLは固定
+    doc = parse(html)
+    doc.xpath("//article/div[@class='m-preview-content']").each do |x|
+      link = x.xpath("a").attribute("href").value
+      title = trim(x.xpath("a").text)
+      # URLのpathから日付を同定する(リアルな日付はリンク先しかないがめんどい)
+      # https://news.microsoft.com/ja-jp/2020/07/01/200701-skillingprogram
+      if link =~ (/^https:\/\/news\.microsoft\.com\/ja\-jp\/(\d+)\/(\d+)\/(\d+)\//)
+	year = $1
+	month = $2
+	day = $3
+	utime = Time.local(year, month, day).to_i
+	time_str = Time.at(utime).strftime("%Y年%-m月%-d日")
+	link_info.push([utime, link, time_str, title])
+      end
+    end
+    
     # リンク先のコンテンツを保存
     ret = []
     link_info.sort!
@@ -74,11 +74,11 @@ class MicrosoftScraper < BaseScraper
           ret.push([time_str, title ,link, body])
         end
       end
-		end
-		return ret
-	end # _scraper
-
-	def scrape()
+    end
+    return ret
+  end # _scraper
+  
+  def scrape()
     # 最初にトップのURLから収集
     ret = _scrape(URL_TOP)
     # 10ページまで一応ページング
@@ -89,7 +89,7 @@ class MicrosoftScraper < BaseScraper
       ret.concat(_ret)
     }
     return ret
-	end
+  end
 end # maicrosoft scraper
 
 

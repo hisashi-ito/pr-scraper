@@ -14,16 +14,16 @@ $: << File.join(File.dirname(__FILE__), '.')
 require 'prtimes_scraper'
 
 class GoogleScraper < PrimesScraper
-	URL = "https://prtimes.jp/topics/keywords/Google"
-
-	#= 初期化
-	def initialize(logger, params, from, to)
-		super(logger, params, from, to)
-	end # initialize
-
-	def scrape()
-		super(URL)
-	end # scrape 
+  URL = "https://prtimes.jp/topics/keywords/Google"
+  
+  #= 初期化
+  def initialize(logger, params, from, to)
+    super(logger, params, from, to)
+  end # initialize
+  
+  def scrape()
+    super(URL)
+  end # scrape 
 end # amazon scaraper
 
 
@@ -34,5 +34,5 @@ if __FILE__ == $0
   from = Time::parse("2020/04/01").to_i
   to = Time::parse("2020/6/30").to_i
   gpoogle = GoogleScraper.new(logger, params, from, to)
-	p google.scrape()
+  p google.scrape()
 end

@@ -29,64 +29,64 @@ SLEEP = 0.25
 
 class PrimesScraper < BaseScraper
   # 最大クリック回数(ボタンがなくなるまでクリックする)
-	MAX_CLICK_NUM = 30
-	
-	#= 初期化
-	def initialize(logger, params, from, to)
-		super(logger, params)
-		# 解析対象時間(UNIX TIME)で指定するようにする
-		@from = from
-		@to = to
-		# Selenium を起動
-		@options = Selenium::WebDriver::Chrome::Options.new
-		@options.add_argument("--lang=ja")
-		@options.add_argument('--headless')
-	end # initialize
-
+  MAX_CLICK_NUM = 30
+  
+  #= 初期化
+  def initialize(logger, params, from, to)
+    super(logger, params)
+    # 解析対象時間(UNIX TIME)で指定するようにする
+    @from = from
+    @to = to
+    # Selenium を起動
+    @options = Selenium::WebDriver::Chrome::Options.new
+    @options.add_argument("--lang=ja")
+    @options.add_argument('--headless')
+  end # initialize
+  
   #= スクレイプ
   #  プレリリースの親ページから指定期内のリンク情報を取得する
   #  期間内のデータを取得するまでpagingを実施する。
-	def scrape(url)
-		link_info = []
+  def scrape(url)
+    link_info = []
     begin
       driver = Selenium::WebDriver.for :chrome, options: @options
-			driver.get(url)
-
-			begin
-     		MAX_CLICK_NUM.times{
-					sleep 1
-        	driver.find_element(:xpath, "//*[@id='more-load-btn-view']").click
-				}
-			rescue
-				@logger.info("clickできなくなくりました...")
-			end
-
-			# xpath から情報を抽出
-			driver.find_elements(:xpath, "//article").each do |x|
-				elems = x.text.split("\n")
-				next if elems.size() == 0
-				# 発表日時の書き方が微妙にずれているのでチェンジ
-				title = elems[0]
-				begin
-					date = elems[1].split(" ")[0]
-					campany = elems[2]
-					utime = Time.strptime(date, "%Y年%m月%d日").to_i
-					time_str = Time.at(utime).strftime("%Y年%-m月%-d日")
-				rescue
-					date = elems[2].split(" ")[0]
-					campany = elems[1]
-					utime = Time.strptime(date, "%Y年%m月%d日").to_i
-					time_str = Time.at(utime).strftime("%Y年%-m月%-d日")					
-				end
-				title = title + " 関連企業:" + campany
-				link = x.find_element(:xpath, "a").attribute("href")
+      driver.get(url)
+      
+      begin
+     	MAX_CLICK_NUM.times{
+	  sleep 1
+          driver.find_element(:xpath, "//*[@id='more-load-btn-view']").click
+	}
+      rescue
+	@logger.info("clickできなくなくりました...")
+      end
+      
+      # xpath から情報を抽出
+      driver.find_elements(:xpath, "//article").each do |x|
+	elems = x.text.split("\n")
+	next if elems.size() == 0
+	# 発表日時の書き方が微妙にずれているのでチェンジ
+	title = elems[0]
+	begin
+	  date = elems[1].split(" ")[0]
+	  campany = elems[2]
+	  utime = Time.strptime(date, "%Y年%m月%d日").to_i
+	  time_str = Time.at(utime).strftime("%Y年%-m月%-d日")
+	rescue
+	  date = elems[2].split(" ")[0]
+	  campany = elems[1]
+	  utime = Time.strptime(date, "%Y年%m月%d日").to_i
+	  time_str = Time.at(utime).strftime("%Y年%-m月%-d日")					
+	end
+	title = title + " 関連企業:" + campany
+	link = x.find_element(:xpath, "a").attribute("href")
         link_info.push([utime, link, time_str, title])
       end
     ensure
       driver.close unless driver.nil?
       driver.quit unless driver.nil?
-		end
-
+    end
+    
     # リンク先のコンテンツを保存
     ret = []
     link_info.sort!
@@ -104,6 +104,6 @@ class PrimesScraper < BaseScraper
         end
       end
     end
-		return ret
-	end # scrape
+    return ret
+  end # scrape
 end # primes scraper

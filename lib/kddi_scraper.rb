@@ -14,16 +14,16 @@ $: << File.join(File.dirname(__FILE__), '.')
 require 'prtimes_scraper'
 
 class KddiScraper < PrimesScraper
-	URL = "https://prtimes.jp/topics/keywords/KDDI"
-
-	#= 初期化
-	def initialize(logger, params, from, to)
-		super(logger, params, from, to)
-	end # initialize
-
-	def scrape()
-		super(URL)
-	end # scrape 
+  URL = "https://prtimes.jp/topics/keywords/KDDI"
+  
+  #= 初期化
+  def initialize(logger, params, from, to)
+    super(logger, params, from, to)
+  end # initialize
+  
+  def scrape()
+    super(URL)
+  end # scrape 
 end # google scaraper
 
 
