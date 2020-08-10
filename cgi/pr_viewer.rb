@@ -10,9 +10,6 @@
 #
 require "bundler/setup"
 require 'logger'
-require 'cgi'
-require 'logger'
-require 'moji'
 require 'sinatra'
 require 'sinatra/reloader'
 require 'sqlite3'
