@@ -64,7 +64,7 @@ $ ruby ./pr_scraper.rb -s softbank -o softbank_pr.tsv -f 20200401 -t 20200630
 * Yahoo  
   https://about.yahoo.co.jp/pr/  
 
-* Alibana  
+* Alibaba  
   https://www.alibaba.co.jp/news/
 
 * Microsoft  
