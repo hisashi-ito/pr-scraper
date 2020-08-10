@@ -35,6 +35,7 @@ end
 get '/pr/:domain' do
   # サービスのドメインを指定
   domain = params[:domain]
-  # viewerを作成
-  #erb :index
+  sql = "select domain, display_time, title, link from pr_table where domain = '#{domain}' order by unix_time desc limit #{LIMIT}"
+  @ret = $db.execute(sql)
+  erb :site
 end
