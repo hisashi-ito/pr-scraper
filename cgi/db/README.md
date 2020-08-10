@@ -1,5 +1,5 @@
 # DataBase (sqlite3)
-cgiのデーターベースは `sqlite3`を利用する。Macではすでに保存されているので特にインストールする必要はない。ubuntsの場合は以下でインストール可能。
+cgiのデーターベースは `sqlite3`を利用する。Macではすでに保存されているので特にインストールする必要はない。ubuntsの場合は以下でインストール可能。
 
 ```bash
 $ sudo apt-get install -y sqlite3
@@ -25,8 +25,7 @@ $ npm install gentelella --save
 ### DBの構築
 * tableの作成  
 ```bash
-#! /bin/bash
-sqlite3 ./pr_table.sqlite3 < ./pr_table.sql
+$ sqlite3 ./pr_table.sqlite3 < ./pr_table.sql
 ```
 * データの登録
 ```bash
