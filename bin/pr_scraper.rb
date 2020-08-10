@@ -79,7 +79,7 @@ class PrScraper
     elsif @site == "yahoo"
       @scraper = YahooScraper.new(@logger, {}, @from, @to)
     elsif @site == "alibaba"
-      @scraper = AlibanaScraper.new(@logger, {}, @from, @to)
+      @scraper = AlibabaScraper.new(@logger, {}, @from, @to)
     elsif @site == "microsoft"
       @scraper = MicrosoftScraper.new(@logger, {}, @from, @to)
     elsif @site == "amazon"

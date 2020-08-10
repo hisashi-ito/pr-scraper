@@ -31,5 +31,5 @@ $ sqlite3 ./pr_table.sqlite3 < ./pr_table.sql
 ```bash
 $ sqlite3 ./pr_table.sqlite3
 sqlite> .separator "\t"
-sqlite> .import pr.tsv pr_table.sqlite3
+sqlite> .import pr.tsv pr_table
 ```
