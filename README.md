@@ -94,6 +94,10 @@
   ```
 * データの登録
   ```bash
+  $ cd cgi/db
+  # DBを作成する
+  $ ./mk_table.sh
+  # Dataを登録する
   $ sqlite3 ./pr_table.sqlite3
   sqlite> .separator "\t"
   sqlite> .import pr.tsv pr_table
