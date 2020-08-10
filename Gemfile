@@ -11,3 +11,4 @@ gem "extractcontent", github: "mono0x/extractcontent"
 gem "selenium-webdriver"
 gem 'sinatra'
 gem 'sinatra-contrib'
+gem 'sqlite3'

@@ -36,6 +36,7 @@ GEM
       rack-protection (= 2.0.8.1)
       sinatra (= 2.0.8.1)
       tilt (~> 2.0)
+    sqlite3 (1.4.2)
     tilt (2.0.10)
 
 PLATFORMS
@@ -48,6 +49,7 @@ DEPENDENCIES
   selenium-webdriver
   sinatra
   sinatra-contrib
+  sqlite3
 
 BUNDLED WITH
    1.17.2

@@ -15,12 +15,20 @@ require 'logger'
 require 'moji'
 require 'sinatra'
 require 'sinatra/reloader'
+require 'sqlite3'
+
+# 表示件数
+LIMIT = 200
 
 $logger = Logger.new(STDERR)
 $logger.level = Logger::INFO
+# DB 初期化
+$db = SQLite3::Database.new("./db/pr_table.sqlite3")
 
 get '/pr' do
-  # viewerを作成
+  # Topページは直近のデータをサイトに関係なく表示する
+  sql = "select domain, display_time, title, link from pr_table order by unix_time desc limit #{LIMIT}"
+  @ret = $db.execute(sql)
   erb :index
 end
 
