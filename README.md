@@ -64,7 +64,7 @@ $ ruby ./pr_scraper.rb -s softbank -o softbank_pr.tsv -f 20200401 -t 20200630
 * Yahoo  
   https://about.yahoo.co.jp/pr/  
 
-* Alibana  
+* Alibaba  
   https://www.alibaba.co.jp/news/
 
 * Microsoft  
@@ -73,7 +73,7 @@ $ ruby ./pr_scraper.rb -s softbank -o softbank_pr.tsv -f 20200401 -t 20200630
 * PRTIMES  
   PRTIMESを利用してkeyword を検索で以下の企業を検索する。
   * Amazon  
-    https://prtimes.jp/topics/keywords/Aamazon  
+    https://prtimes.jp/topics/keywords/Amazon  
 
   * Google  
     https://prtimes.jp/topics/keywords/Google  
