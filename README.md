@@ -8,7 +8,7 @@
 以下に機能毎に説明する。
 
 ## 2. スクレイピング・ツール
-スクレイピングツールは、主要IT企業のプレスリリースを企業毎に抽出し、`tsv`形式のファイルを出力する機能を提供する。
+スクレイピングツールは、主要IT企業のプレスリリースを企業毎に抽出し、`tsv`形式のファイルを出力する機能を提供する。
 
 * 利用方法
   ```bash
@@ -84,7 +84,7 @@
       https://prtimes.jp/topics/keywords/Facebook
 
 ## 3.  Web Application
-web application を作成するためには抽出したPressReleases情報からDBを作成する。DBは`sqlite3`を利用する。作成方法は以下のように作成する。
+web application を作成するためには抽出したPressReleases情報からDBを作成する。DBは`sqlite3`を利用する。作成方法は以下のように作成する。
 ここでは、事前に`sqlite3`が事前にインストールされていることを想定とする。Macでは事前にインストールされている。
 
 ### DBの構築
