@@ -76,7 +76,7 @@ class PrScraper
       @scraper = CyberagentScraper.new(@logger, {}, @from, @to)
     elsif @site == "apple"
       @scraper = AppleScraper.new(@logger, {}, @from, @to)
-    elsif @site == "Yahoo"
+    elsif @site == "yahoo"
       @scraper = YahooScraper.new(@logger, {}, @from, @to)
     elsif @site == "alibaba"
       @scraper = AlibanaScraper.new(@logger, {}, @from, @to)

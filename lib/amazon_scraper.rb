@@ -14,7 +14,7 @@ $: << File.join(File.dirname(__FILE__), '.')
 require 'prtimes_scraper'
 
 class AmazonScraper < PrimesScraper
-  URL = "https://prtimes.jp/topics/keywords/Aamazon"
+  URL = "https://prtimes.jp/topics/keywords/amazon"
   
   #= 初期化
   def initialize(logger, params, from, to)
