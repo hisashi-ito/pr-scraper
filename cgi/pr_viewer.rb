@@ -20,13 +20,13 @@ $logger = Logger.new(STDERR)
 $logger.level = Logger::INFO
 
 get '/pr' do
-	# viewerを作成
-	erb :index
+  # viewerを作成
+  erb :index
 end
 
 get '/pr/:domain' do
-	# サービスのドメインを指定
-	domain = params[:domain]
-	# viewerを作成
-	#erb :index
+  # サービスのドメインを指定
+  domain = params[:domain]
+  # viewerを作成
+  #erb :index
 end

@@ -42,6 +42,11 @@ require 'apple_scraper'
 require 'yahoo_scraper'
 require 'alibaba_scraper'
 require 'microsoft_scraper'
+require 'prtimes_scraper'
+require 'amazon_scraper'
+require 'google_scraper'
+require 'facebook_scraper'
+require 'kddi_scraper'
 
 class PrScraper
   def initialize(logger, site, output, from, to)
@@ -85,8 +90,6 @@ class PrScraper
       @scraper = KddiScraper.new(@logger, {}, @from, @to)
     elsif @site == "facebook"
       @scraper = FacebookScraper.new(@logger, {}, @from, @to)
-    elsif @site	== "microsoft"
-      @scraper = MicrosoftScraper.new(@logger, {}, @from, @to)
     end
     
   end # initialize
