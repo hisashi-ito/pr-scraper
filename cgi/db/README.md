@@ -21,3 +21,16 @@ https://github.com/ColorlibHQ/gentelella　　
 ```bash
 $ npm install gentelella --save
 ```
+
+### DBの構築
+* tableの作成  
+```bash
+#! /bin/bash
+sqlite3 ./pr_table.sqlite3 < ./pr_table.sql
+```
+* データの登録
+```bash
+$ sqlite3 ./pr_table.sqlite3
+sqlite> .separator "\t"
+sqlite> .import pr.tsv pr_table.sqlite3
+```
