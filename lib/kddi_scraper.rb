@@ -5,7 +5,7 @@
 #
 #  概要: KDDI の情報を
 #       PRTIMESの特定のキーワードで検索して情報を抽出する
-#       https://prtimes.jp/topics/keywords/Google
+#       https://prtimes.jp/topics/keywords/KDDI
 #
 #  更新履歴:
 #           2020.08.10 新規作成
