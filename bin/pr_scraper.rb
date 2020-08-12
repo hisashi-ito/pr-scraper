@@ -47,6 +47,7 @@ require 'amazon_scraper'
 require 'google_scraper'
 require 'facebook_scraper'
 require 'kddi_scraper'
+require 'cyberagent_scraper'
 
 class PrScraper
   def initialize(logger, site, output, from, to)

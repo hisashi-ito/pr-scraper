@@ -1,0 +1,2 @@
+.separator "\t"
+.import /tmp/pr.tsv pr_table

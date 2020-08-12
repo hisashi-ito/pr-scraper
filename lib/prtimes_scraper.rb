@@ -65,7 +65,7 @@ class PrimesScraper < BaseScraper
       driver.find_elements(:xpath, "//article").each do |x|
 	elems = x.text.split("\n")
 	next if elems.size() == 0
-	# 発表日時の書き方が微妙にずれているのでチェンジ
+        # 発表日時の書き方が微妙にずれているのでチェンジ
 	title = elems[0]
 	begin
 	  date = elems[1].split(" ")[0]
@@ -73,10 +73,14 @@ class PrimesScraper < BaseScraper
 	  utime = Time.strptime(date, "%Y年%m月%d日").to_i
 	  time_str = Time.at(utime).strftime("%Y年%-m月%-d日")
 	rescue
-	  date = elems[2].split(" ")[0]
-	  campany = elems[1]
-	  utime = Time.strptime(date, "%Y年%m月%d日").to_i
-	  time_str = Time.at(utime).strftime("%Y年%-m月%-d日")					
+          begin
+	    date = elems[2].split(" ")[0]
+	    campany = elems[1]
+	    utime = Time.strptime(date, "%Y年%m月%d日").to_i
+	    time_str = Time.at(utime).strftime("%Y年%-m月%-d日")
+          rescue
+            next
+          end
 	end
 	title = title + " 関連企業:" + campany
 	link = x.find_element(:xpath, "a").attribute("href")

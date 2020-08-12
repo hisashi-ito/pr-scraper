@@ -1,0 +1,507 @@
+/usr/bin/ruby ../bin/pr_scraper.rb -s alibaba -o ../data/alibaba_pr_20200812.tsv -f 20200802 -t 20200812
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/softbank_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/cyberagent_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: previous definition of SLEEP was here
+I, [2020-08-12T14:20:02.487724 #3183]  INFO -- : *** start pr_scraper ***
+I, [2020-08-12T14:20:02.488307 #3183]  INFO -- : {}
+I, [2020-08-12T14:20:06.343817 #3183]  INFO -- : *** stop pr_scraper ***
+/usr/bin/ruby ../bin/pr_scraper.rb -s softbank -o ../data/softbank_pr_20200812.tsv -f 20200802 -t 20200812
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/softbank_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/cyberagent_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: previous definition of SLEEP was here
+I, [2020-08-12T14:20:06.809334 #3194]  INFO -- : *** start pr_scraper ***
+I, [2020-08-12T14:20:06.809773 #3194]  INFO -- : {}
+I, [2020-08-12T14:21:23.949962 #3194]  INFO -- : *** stop pr_scraper ***
+/usr/bin/ruby ../bin/pr_scraper.rb -s baidu -o ../data/baidu_pr_20200812.tsv -f 20200802 -t 20200812
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/softbank_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/cyberagent_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: previous definition of SLEEP was here
+I, [2020-08-12T14:21:24.348596 #3299]  INFO -- : *** start pr_scraper ***
+I, [2020-08-12T14:21:24.348966 #3299]  INFO -- : {}
+I, [2020-08-12T14:21:37.026455 #3299]  INFO -- : *** stop pr_scraper ***
+/usr/bin/ruby ../bin/pr_scraper.rb -s rakuten -o ../data/rakuten_pr_20200812.tsv -f 20200802 -t 20200812
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/softbank_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/cyberagent_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: previous definition of SLEEP was here
+I, [2020-08-12T14:21:37.416936 #3321]  INFO -- : *** start pr_scraper ***
+I, [2020-08-12T14:21:37.417346 #3321]  INFO -- : {}
+I, [2020-08-12T14:21:52.357893 #3321]  INFO -- : *** stop pr_scraper ***
+/usr/bin/ruby ../bin/pr_scraper.rb -s docomo -o ../data/docomo_pr_20200812.tsv -f 20200802 -t 20200812
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/softbank_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/cyberagent_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: previous definition of SLEEP was here
+I, [2020-08-12T14:21:52.779854 #3340]  INFO -- : *** start pr_scraper ***
+I, [2020-08-12T14:21:52.780312 #3340]  INFO -- : {}
+I, [2020-08-12T14:22:10.196341 #3340]  INFO -- : *** stop pr_scraper ***
+/usr/bin/ruby ../bin/pr_scraper.rb -s mercari -o ../data/mercari_pr_20200812.tsv -f 20200802 -t 20200812
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/softbank_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/cyberagent_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: previous definition of SLEEP was here
+I, [2020-08-12T14:22:10.557158 #3361]  INFO -- : *** start pr_scraper ***
+I, [2020-08-12T14:22:10.557572 #3361]  INFO -- : {}
+E, [2020-08-12T14:22:23.170371 #3361] ERROR -- : ページの習得に失敗しました: https://about.mercari.com/press/news/?page=2
+I, [2020-08-12T14:22:23.170949 #3361]  INFO -- : *** stop pr_scraper ***
+/usr/bin/ruby ../bin/pr_scraper.rb -s dmm -o ../data/dmm_pr_20200812.tsv -f 20200802 -t 20200812
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/softbank_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/cyberagent_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: previous definition of SLEEP was here
+I, [2020-08-12T14:22:23.551162 #3384]  INFO -- : *** start pr_scraper ***
+I, [2020-08-12T14:22:23.551854 #3384]  INFO -- : {}
+I, [2020-08-12T14:22:33.518346 #3384]  INFO -- : *** stop pr_scraper ***
+/usr/bin/ruby ../bin/pr_scraper.rb -s line -o ../data/line_pr_20200812.tsv -f 20200802 -t 20200812
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/softbank_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/cyberagent_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: previous definition of SLEEP was here
+I, [2020-08-12T14:22:33.876023 #3405]  INFO -- : *** start pr_scraper ***
+I, [2020-08-12T14:22:33.876448 #3405]  INFO -- : {}
+I, [2020-08-12T14:22:43.469311 #3405]  INFO -- : *** stop pr_scraper ***
+/usr/bin/ruby ../bin/pr_scraper.rb -s cyberagent -o ../data/cyberagent_pr_20200812.tsv -f 20200802 -t 20200812
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/softbank_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/cyberagent_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: previous definition of SLEEP was here
+I, [2020-08-12T14:22:43.818156 #3432]  INFO -- : *** start pr_scraper ***
+I, [2020-08-12T14:22:43.818633 #3432]  INFO -- : {}
+I, [2020-08-12T14:22:53.582665 #3432]  INFO -- : *** stop pr_scraper ***
+/usr/bin/ruby ../bin/pr_scraper.rb -s apple -o ../data/apple_pr_20200812.tsv -f 20200802 -t 20200812
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/softbank_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/cyberagent_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: previous definition of SLEEP was here
+I, [2020-08-12T14:22:54.015181 #3448]  INFO -- : *** start pr_scraper ***
+I, [2020-08-12T14:22:54.015783 #3448]  INFO -- : {}
+I, [2020-08-12T14:23:03.276694 #3448]  INFO -- : *** stop pr_scraper ***
+/usr/bin/ruby ../bin/pr_scraper.rb -s yahoo -o ../data/yahoo_pr_20200812.tsv -f 20200802 -t 20200812
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/softbank_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/cyberagent_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: previous definition of SLEEP was here
+I, [2020-08-12T14:23:03.722614 #3462]  INFO -- : *** start pr_scraper ***
+I, [2020-08-12T14:23:03.723181 #3462]  INFO -- : {}
+I, [2020-08-12T14:23:37.472337 #3462]  INFO -- : *** stop pr_scraper ***
+/usr/bin/ruby ../bin/pr_scraper.rb -s alibaba -o ../data/alibaba_pr_20200812.tsv -f 20200802 -t 20200812
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/softbank_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/cyberagent_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: previous definition of SLEEP was here
+I, [2020-08-12T14:23:37.950177 #3582]  INFO -- : *** start pr_scraper ***
+I, [2020-08-12T14:23:37.950658 #3582]  INFO -- : {}
+I, [2020-08-12T14:23:41.754815 #3582]  INFO -- : *** stop pr_scraper ***
+/usr/bin/ruby ../bin/pr_scraper.rb -s microsoft -o ../data/microsoft_pr_20200812.tsv -f 20200802 -t 20200812
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/softbank_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/cyberagent_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: previous definition of SLEEP was here
+I, [2020-08-12T14:23:42.168067 #3589]  INFO -- : *** start pr_scraper ***
+I, [2020-08-12T14:23:42.168710 #3589]  INFO -- : {}
+I, [2020-08-12T14:24:27.115079 #3589]  INFO -- : *** stop pr_scraper ***
+/usr/bin/ruby ../bin/pr_scraper.rb -s amazon -o ../data/amazon_pr_20200812.tsv -f 20200802 -t 20200812
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/softbank_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/cyberagent_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: previous definition of SLEEP was here
+I, [2020-08-12T14:24:27.556592 #3646]  INFO -- : *** start pr_scraper ***
+I, [2020-08-12T14:24:27.557023 #3646]  INFO -- : {}
+I, [2020-08-12T14:26:31.829672 #3646]  INFO -- : *** stop pr_scraper ***
+/usr/bin/ruby ../bin/pr_scraper.rb -s google -o ../data/google_pr_20200812.tsv -f 20200802 -t 20200812
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/softbank_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/cyberagent_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: previous definition of SLEEP was here
+I, [2020-08-12T14:26:32.212720 #3835]  INFO -- : *** start pr_scraper ***
+I, [2020-08-12T14:26:32.213151 #3835]  INFO -- : {}
+I, [2020-08-12T14:28:36.080302 #3835]  INFO -- : *** stop pr_scraper ***
+/usr/bin/ruby ../bin/pr_scraper.rb -s kddi -o ../data/kddi_pr_20200812.tsv -f 20200802 -t 20200812
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/softbank_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/cyberagent_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: previous definition of SLEEP was here
+I, [2020-08-12T14:28:36.417598 #4046]  INFO -- : *** start pr_scraper ***
+I, [2020-08-12T14:28:36.418010 #4046]  INFO -- : {}
+I, [2020-08-12T14:30:42.055278 #4046]  INFO -- : *** stop pr_scraper ***
+/usr/bin/ruby ../bin/pr_scraper.rb -s facebook -o ../data/facebook_pr_20200812.tsv -f 20200802 -t 20200812
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/softbank_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/cyberagent_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: previous definition of SLEEP was here
+I, [2020-08-12T14:30:42.397902 #4247]  INFO -- : *** start pr_scraper ***
+I, [2020-08-12T14:30:42.398331 #4247]  INFO -- : {}
+I, [2020-08-12T14:32:46.316674 #4247]  INFO -- : *** stop pr_scraper ***
+/usr/bin/ruby ../bin/pr_scraper.rb -s microsoft -o ../data/microsoft_pr_20200812.tsv -f 20200802 -t 20200812
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/softbank_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/baidu_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/rakuten_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/docomo_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/mercari_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/dmm_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/line_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/apple_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/yahoo_scraper.rb:26: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/alibaba_scraper.rb:20: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/microsoft_scraper.rb:21: warning: previous definition of SLEEP was here
+/home/h-ito/pr-scraper/lib/cyberagent_scraper.rb:20: warning: already initialized constant SLEEP
+/home/h-ito/pr-scraper/lib/prtimes_scraper.rb:28: warning: previous definition of SLEEP was here
+I, [2020-08-12T14:32:46.673982 #4431]  INFO -- : *** start pr_scraper ***
+I, [2020-08-12T14:32:46.674463 #4431]  INFO -- : {}
+I, [2020-08-12T14:33:30.756458 #4431]  INFO -- : *** stop pr_scraper ***
+I, [2020-08-12T14:33:32.042207 #4537]  INFO -- : *** start update ***
+I, [2020-08-12T14:33:32.051319 #4537]  INFO -- : *** end update ***
