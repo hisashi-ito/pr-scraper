@@ -15,7 +15,7 @@ do
     output="../data/${site}_pr_${to}.tsv"
     main_cmd="${cmd} -s ${site} -o ${output} -f ${from} -t ${to}"
     echo ${main_cmd}
-    #eval ${main_cmd}
+    eval ${main_cmd}
 done
 # pr.tsv を作成
 ./tsv2input.sh ${to}
