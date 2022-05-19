@@ -1,20 +1,5 @@
 nohup: 入力を無視します
-[2020-08-12 14:13:03] INFO  WEBrick 1.3.1
-[2020-08-12 14:13:03] INFO  ruby 2.4.7 (2019-08-28) [x86_64-linux]
-== Sinatra (v2.0.8.1) has taken the stage on 4624 for development with backup from WEBrick
-[2020-08-12 14:13:03] INFO  WEBrick::HTTPServer#start: pid=2562 port=4624
-202.217.72.197, 127.0.0.1 - - [12/Aug/2020:14:14:02 +0900] "GET /pr HTTP/1.1" 200 107782 0.0262
-127.0.0.1 - - [12/Aug/2020:14:14:02 JST] "GET /pr HTTP/1.1" 200 107782
-- -> /pr
-202.217.72.197, 127.0.0.1 - - [12/Aug/2020:14:14:07 +0900] "GET /pr/cyberagent HTTP/1.1" 200 7324 0.0132
-127.0.0.1 - - [12/Aug/2020:14:14:07 JST] "GET /pr/cyberagent HTTP/1.1" 200 7324
-https://058680b27ce0.ngrok.io/pr -> /pr/cyberagent
-202.217.72.197, 127.0.0.1 - - [12/Aug/2020:15:13:02 +0900] "GET /pr HTTP/1.1" 200 107836 0.0151
-127.0.0.1 - - [12/Aug/2020:15:13:02 JST] "GET /pr HTTP/1.1" 200 107836
-- -> /pr
-202.217.72.197, 127.0.0.1 - - [12/Aug/2020:15:13:22 +0900] "GET /pr/cyberagent HTTP/1.1" 200 7324 0.0048
-127.0.0.1 - - [12/Aug/2020:15:13:22 JST] "GET /pr/cyberagent HTTP/1.1" 200 7324
-https://058680b27ce0.ngrok.io/pr -> /pr/cyberagent
-202.217.72.197, 127.0.0.1 - - [12/Aug/2020:15:18:10 +0900] "GET /pr/cyberagent HTTP/1.1" 200 9322 0.0079
-127.0.0.1 - - [12/Aug/2020:15:18:10 JST] "GET /pr/cyberagent HTTP/1.1" 200 9322
-https://058680b27ce0.ngrok.io/pr -> /pr/cyberagent
+[2022-05-19 16:20:40] INFO  WEBrick 1.3.1
+[2022-05-19 16:20:40] INFO  ruby 2.3.1 (2016-04-26) [x86_64-linux-gnu]
+== Sinatra (v2.2.0) has taken the stage on 4624 for development with backup from WEBrick
+[2022-05-19 16:20:40] INFO  WEBrick::HTTPServer#start: pid=21322 port=4624

@@ -8,7 +8,7 @@
 #          https://qiita.com/nwtgck/items/cfb5052135b8e64af01c
 #
 cmd="/usr/bin/ruby ../bin/pr_scraper.rb"
-from=`date +%Y%m%d --date '10 day ago'`
+from=`date +%Y%m%d --date '300 day ago'`
 to=`date '+%Y%m%d'`
 for site in alibaba softbank baidu rakuten docomo mercari dmm line cyberagent apple yahoo alibaba microsoft amazon google kddi facebook microsoft
 do
