@@ -39,8 +39,11 @@ class YahooScraper < BaseScraper
     @to = to
     # Selenium を起動
     @options = Selenium::WebDriver::Chrome::Options.new
+    @options.binary = ENV['CHROME_BIN'] if ENV['CHROME_BIN']
     @options.add_argument("--lang=ja")
-    @options.add_argument('--headless')
+    @options.add_argument('--headless=new')
+    @options.add_argument('--no-sandbox')
+    @options.add_argument('--disable-dev-shm-usage')
   end # initialize
 
   #= スクレイプ
@@ -68,7 +71,6 @@ class YahooScraper < BaseScraper
         end
       end
     ensure
-      driver.close unless driver.nil?
       driver.quit unless driver.nil?
     end
     

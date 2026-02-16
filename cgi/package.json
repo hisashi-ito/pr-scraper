@@ -1,0 +1,8 @@
+{
+  "name": "pr-viewer",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "gentelella": "1.4.0"
+  }
+}

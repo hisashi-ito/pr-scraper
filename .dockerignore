@@ -1,0 +1,5 @@
+vendor/bundle
+.bundle
+cgi/node_modules
+.git
+data/*.tsv

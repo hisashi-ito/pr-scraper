@@ -14,6 +14,9 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'sqlite3'
 
+# Docker環境からアクセス可能にする
+set :bind, '0.0.0.0'
+
 # 表示件数
 LIMIT = 200
 

@@ -98,7 +98,7 @@ class PrScraper
   def perform()
     ret = @scraper.scrape()
     # 出力
-    o = open(@output, "w")
+    o = File.open(@output, "w")
     ret.each do |ary|
       o.puts(ary.join("\t"))
     end

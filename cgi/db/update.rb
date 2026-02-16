@@ -19,7 +19,7 @@ class DB
   end
   
   def update()
-    f = open(@input, "r")
+    f = File.open(@input, "r")
     while line = f.gets
       begin
         # domain, unix_time, display_time, title, link, body

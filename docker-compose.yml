@@ -1,0 +1,19 @@
+services:
+  web:
+    build: .
+    ports:
+      - "4567:4567"
+    volumes:
+      - ./cgi/db:/app/cgi/db
+      - ./data:/app/data
+    working_dir: /app/cgi
+    command: ruby pr_viewer.rb
+
+  scraper:
+    build: .
+    volumes:
+      - ./cgi/db:/app/cgi/db
+      - ./data:/app/data
+    entrypoint: ["ruby", "/app/bin/pr_scraper.rb"]
+    profiles:
+      - scraper

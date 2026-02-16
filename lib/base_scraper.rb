@@ -14,6 +14,7 @@ require "bundler/setup"
 require 'logger'
 require 'moji'
 require 'cgi'
+require 'uri'
 require 'open-uri'
 require 'nokogiri'
 require 'extractcontent'
@@ -56,7 +57,7 @@ class BaseScraper
     opt['User-Agent'] = USER_AGENT
     html = nil
     begin
-      open(url, opt) do |file|
+      URI.open(url, opt) do |file|
         html = file.read
       end
     rescue
