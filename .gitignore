@@ -1,3 +1,4 @@
 cgi/node_modules/
 vendor/bundle/
+.bundle/
 *.sqlite3
