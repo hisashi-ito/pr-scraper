@@ -1,4 +1,5 @@
 cgi/node_modules/
+cgi/package-lock.json
 vendor/bundle/
 .bundle/
 *.sqlite3
