@@ -1,0 +1,3 @@
+cgi/node_modules/
+vendor/bundle/
+*.sqlite3
