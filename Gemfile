@@ -8,8 +8,8 @@ gem "moji"
 gem "nokogiri"
 gem "extractcontent", github: "mono0x/extractcontent"
 gem "selenium-webdriver", "~> 4.10"
-gem 'sinatra', "~> 3.0"
-gem 'sinatra-contrib', "~> 3.0"
+gem 'sinatra', "~> 4.1"
+gem 'sinatra-contrib', "~> 4.1"
 gem 'sqlite3', "~> 1.6"
 gem 'rackup'
 gem 'webrick'
